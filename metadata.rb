@@ -1,0 +1,7 @@
+name             'cheftdd'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures cheftdd'
+long_description 'Installs/Configures cheftdd'
+version          '0.1.0'
