@@ -1,15 +1,42 @@
 ---
 driver:
   name: vagrant
+  customize:
+    memory: 1024
 
 provisioner:
-  name: chef_solo
+  name: chef_zero
+  data_bags_path: "data_bags"
+  environments_path: "environments"
+  nodes_path: "test/integration/nodes"
+  encrypted_data_bag_secret_key_path: ".databag-secret.key"
+  require_chef_omnibus: 11.16.4
+  client_rb:
+    environment: _default
+  attributes:
+    testkitchen: true
+    openssh:
+      server:
+        password_authentication: 'yes'
+        permit_root_login: 'yes'
+    authorization:
+      sudo:
+        users: ['vagrant']
+        passwordless: true
+    platformstack:
+      omnibus_updater:
+        enabled: false
+      iptables:
+        allow_ssh_from_world: true
 
 platforms:
-  - name: ubuntu-12.04
-  - name: centos-6.4
+  - name: ubuntu-14.04
 
 suites:
-  - name: default
+  # - name: default
+  #   run_list:
+  #   attributes:
+
+  - name: nodejs
     run_list:
-    attributes:
+      - recipe[cheftdd::nodejs]
