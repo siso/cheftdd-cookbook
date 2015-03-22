@@ -1,6 +1,6 @@
 name             'cheftdd'
-maintainer       'Simone Soldateschi'
-maintainer_email 'simone.soldateschi@gmail.com'
+maintainer       'Rackspace'
+maintainer_email 'rackspace-cookbooks@rackspace.com'
 license          'All rights reserved'
 description      'Installs/Configures cheftdd'
 long_description 'Installs/Configures cheftdd'
