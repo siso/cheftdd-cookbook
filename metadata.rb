@@ -1,6 +1,6 @@
 name             'cheftdd'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Simone Soldateschi'
+maintainer_email 'simone.soldateschi@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures cheftdd'
 long_description 'Installs/Configures cheftdd'

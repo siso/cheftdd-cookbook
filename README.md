@@ -1,6 +1,6 @@
 # cheftdd-cookbook
 
-TODO: Enter the cookbook description here.
+Cookbook to demo "TDD with Chef" at [March '15 Chef Meetup](http://www.meetup.com/Chef-Sydney/events/220775547/) in Sydney.
 
 ## Supported Platforms
 
@@ -39,4 +39,4 @@ Include `cheftdd` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Simone Soldateschi (<simone.soldateschi@gmail.com>)

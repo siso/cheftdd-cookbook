@@ -1,3 +1,4 @@
-# 0.1.0
+# CHANGELOG
 
-Initial release of cheftdd
+## 0.1.0
+- [Simone Soldateschi] - Initial release of cheftdd
