@@ -39,4 +39,5 @@ suites:
 
   - name: nodejs
     run_list:
+      - recipe[cheftdd::default]
       - recipe[cheftdd::nodejs]
