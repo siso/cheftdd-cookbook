@@ -42,9 +42,11 @@ execute 'install npm packages' do
 end
 
 execute 'start serving node.js app' do
-  command 'grunt serve &'
+  command 'grunt serve --port 80 &'
   action :run
   cwd '/opt/reveal.js'
 end
 
-# Open http://localhost:8000 to view your presentation
+# Open http://localhost:80 to view your presentation
+
+add_iptables_rule('INPUT', '-p tcp -m state --state NEW --dport 80 -s 10.0.0.0/8 -j ACCEPT', 50, 'Allow the Internet access the web-server')
