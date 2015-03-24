@@ -6,6 +6,10 @@ describe command('nodejs --version') do
   its(:stdout) { should match(/v0.10.37/) }
 end
 
+describe package('git') do
+  it { should be_installed }
+end
+
 describe file('/opt/reveal.js') do
   it { should be_directory }
 end
