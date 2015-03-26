@@ -2,9 +2,9 @@
 # Cookbook Name:: cheftdd-demo
 # Recipe:: nodejs
 #
-# Copyright (C) 2015 YOUR_NAME
+# Copyright (C) 2015 Acme Corp.
 #
-# All rights reserved - Do Not Redistribute
+# All rights reserved - GNU General Public License v3+
 #
 
 #
